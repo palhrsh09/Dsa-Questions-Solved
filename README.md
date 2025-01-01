@@ -1,31 +1,35 @@
 # Dsa-Questions-Solved
 
-Check string
+# JavaScript Utility Functions
+
+This repository contains some commonly used JavaScript functions. Below are the examples with their descriptions.
+
+---
+
+## 1. Reverse Words in a String
+
+javascript
 let string = "Try programiz pro";
 let result = "";
 let word = "";
 
 // Loop through each character in the string
 for (let i = 0; i <= string.length; i++) {
-    // Check if the character is a space or end of the string
     if (i === string.length || string[i] === " ") {
-        // Reverse the current word and add to the result
         for (let j = word.length - 1; j >= 0; j--) {
             result += word[j];
         }
-        // Add the space back (except at the end of the string)
         if (i !== string.length) {
             result += " ";
         }
-        // Reset the word for the next one
         word = "";
     } else {
-        // Keep building the word
         word += string[i];
     }
 }
 
-console.log(result);   
+console.log(result); 
+ 
 
 
 
